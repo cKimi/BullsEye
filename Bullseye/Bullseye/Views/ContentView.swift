@@ -81,11 +81,11 @@ struct HitMeButton: View {
         .cornerRadius(21.0)
         .bold()
         .font(.title3)
-        .alert("Hello cK!",
+        .alert("Hello Carlos Kimura!",
                isPresented: $alertIsVisible,
                actions: {
             Button("Awesome") {
-                print("Alert closed")
+                game.startNewRound(points: game.points(sliderValue: Int(sliderValue)))
             }
         }, message: {
             let roundedValue = Int(sliderValue.rounded())
