@@ -28,9 +28,8 @@ struct PointsView: View {
                 }
                 game.startNewRound(points: points)
             } label: {
-                RoundedImageViewStroked(systemName: "arrow.counterclockwise")
+                ButtonText(text: "Start New Round")
             }
-            ButtonText(text: "Start New Round")
         }
         .padding()
         .frame(maxWidth: 300)
