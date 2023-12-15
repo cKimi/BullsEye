@@ -31,7 +31,7 @@ struct InstructionsView: View {
     
     var body: some View {
         VStack {
-            InstructionText(text: "🎯🎯🎯\nPut the bullseye as close as you can to")
+            TextViews(text: "🎯🎯🎯\nPut the bullseye as close as you can to")
                 .padding(.horizontal, 30)
             BigNumberText(text: String(game.target))
         }
@@ -45,15 +45,13 @@ struct SliderView: View {
     var body: some View {
         HStack {
             SliderLabelText(text: "1")
+                .frame(width: 35)
             Slider(value: $sliderValue, in: 1.0...100.0)
             SliderLabelText(text: "100")
+                .frame(width: 35)
         }
         .padding()
     }
-}
-
-#Preview {
-    ContentView()
 }
 
 struct HitMeButton: View {
@@ -97,4 +95,8 @@ struct HitMeButton: View {
                 """)
         })
     }
+}
+
+#Preview {
+    ContentView()
 }

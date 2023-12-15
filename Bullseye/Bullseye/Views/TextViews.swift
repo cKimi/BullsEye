@@ -1,5 +1,5 @@
 //
-//  InstructionText.swift
+//  TextViews.swift
 //  Bullseye
 //
 //  Created by Carlos Kimura on 14/12/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct InstructionText: View {
+struct TextViews: View {
     
     var text: String
     
@@ -47,29 +47,25 @@ struct SliderLabelText: View {
     }
 }
 
-//struct SliderLabelText: View {
-//    
-//    @Binding var sliderValue: Double
-//    
-//    var body: some View {
-//        HStack {
-//            Text("1")
-//                .bold()
-//                .foregroundColor(Color("TextColor"))
-//            Slider(value: $sliderValue, in: 1.0...100.0)
-//            Text("100")
-//                .bold()
-//                .foregroundColor(Color("TextColor"))
-//        }
-//        .padding()
-//    }
-//}
+struct LabelText: View {
+    
+    var text: String
+    
+    var body: some View {
+        Text(text.uppercased())
+            .kerning(1.5)
+            .font(.caption)
+            .bold()
+            .foregroundColor(Color("TextColor"))
+    }
+}
 
 #Preview {
     VStack {
-        InstructionText(text: "Instructions")
+        TextViews(text: "Instructions")
         BigNumberText(text: "999")
         SliderLabelText(text: "99")
+        LabelText(text: "Score")
     }
     
 }
