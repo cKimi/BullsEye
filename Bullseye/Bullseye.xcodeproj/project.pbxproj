@@ -14,6 +14,7 @@
 		0F3943262B2B3905005518AC /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3943252B2B3905005518AC /* Game.swift */; };
 		0F39432E2B2B3DC5005518AC /* BullseyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F39432D2B2B3DC5005518AC /* BullseyeTests.swift */; };
 		0FA8C0CF2B2C970100364531 /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA8C0CE2B2C970100364531 /* Shapes.swift */; };
+		0FA8C0D12B2C994F00364531 /* RoundedImageViewStroked.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA8C0D02B2C994F00364531 /* RoundedImageViewStroked.swift */; };
 		0FD01CF02B2B735200C887AD /* InstructionText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD01CEF2B2B735200C887AD /* InstructionText.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		0F39432B2B2B3DC5005518AC /* BullseyeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BullseyeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F39432D2B2B3DC5005518AC /* BullseyeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullseyeTests.swift; sourceTree = "<group>"; };
 		0FA8C0CE2B2C970100364531 /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
+		0FA8C0D02B2C994F00364531 /* RoundedImageViewStroked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageViewStroked.swift; sourceTree = "<group>"; };
 		0FD01CEF2B2B735200C887AD /* InstructionText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +111,7 @@
 				0F0E628E2B29F46200D004ED /* ContentView.swift */,
 				0FD01CEF2B2B735200C887AD /* InstructionText.swift */,
 				0FA8C0CE2B2C970100364531 /* Shapes.swift */,
+				0FA8C0D02B2C994F00364531 /* RoundedImageViewStroked.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FA8C0D12B2C994F00364531 /* RoundedImageViewStroked.swift in Sources */,
 				0F0E628F2B29F46200D004ED /* ContentView.swift in Sources */,
 				0FD01CF02B2B735200C887AD /* InstructionText.swift in Sources */,
 				0FA8C0CF2B2C970100364531 /* Shapes.swift in Sources */,
