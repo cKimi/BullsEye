@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TextViews: View {
+struct InstructionText: View {
     
     var text: String
     
@@ -92,7 +92,7 @@ struct ButtonText: View {
 
 #Preview {
     VStack {
-        TextViews(text: "Instructions")
+        InstructionText(text: "Instructions")
         BigNumberText(text: "999")
         SliderLabelText(text: "99")
         LabelText(text: "Score")

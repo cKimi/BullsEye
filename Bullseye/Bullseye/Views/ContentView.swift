@@ -32,7 +32,7 @@ struct InstructionsView: View {
     
     var body: some View {
         VStack {
-            TextViews(text: "🎯🎯🎯\nPut the bullseye as close as you can to")
+            InstructionText(text: "🎯🎯🎯\nPut the bullseye as close as you can to")
                 .padding(.horizontal, 30)
             BigNumberText(text: String(game.target))
         }
