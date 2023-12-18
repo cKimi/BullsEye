@@ -73,6 +73,32 @@ struct BodyText: View {
     }
 }
 
+struct ScoreText: View {
+    
+    var score: Int
+    
+    var body: some View {
+        Text(String(score))
+            .bold()
+            .kerning(-0.2)
+            .foregroundStyle(Color("TextColor"))
+            .font(.title3)
+    }
+}
+
+struct DateText: View {
+    
+    var date: Date
+    
+    var body: some View {
+        Text(date, style: .time)
+            .bold()
+            .kerning(-0.2)
+            .foregroundStyle(Color("TextColor"))
+            .font(.title3)
+    }
+}
+
 struct ButtonText: View {
     
     var text: String
@@ -98,8 +124,8 @@ struct ButtonText: View {
         LabelText(text: "Score")
         BodyText(text: "You scored 200 points 😻😻😻")
         ButtonText(text: "Start New Round")
+        ScoreText(score: 458)
+        DateText(date: Date())
     }
     .padding()
 }
-
-
