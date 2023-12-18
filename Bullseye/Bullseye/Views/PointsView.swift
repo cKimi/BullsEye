@@ -40,6 +40,6 @@ struct PointsView: View {
 }
 
 #Preview {
-    PointsView(alertIsVisible: .constant(false), sliderValue: .constant(51.0), game: .constant(Game()))
+    PointsView(alertIsVisible: .constant(false), sliderValue: .constant(51.0), game: .constant(Game(loadTestData: true)))
         .preferredColorScheme(.dark)
 }

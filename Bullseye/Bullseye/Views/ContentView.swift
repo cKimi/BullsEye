@@ -11,7 +11,7 @@ struct ContentView: View {
     
     @State private var alertIsVisible = false
     @State private var sliderValue = 50.0
-    @State private var game = Game()
+    @State private var game = Game(loadTestData: false)
     
     var body: some View {
         ZStack {
